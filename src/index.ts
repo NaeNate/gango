@@ -39,7 +39,7 @@ client.on("interactionCreate", async (interaction) => {
   if (!interaction.isCommand()) return
 
   if (
-    !(process.env.node_env === "production") &&
+    !(process.env.NODE_ENV === "production") &&
     interaction.channelId !== "944687542261923850"
   ) {
     await interaction.reply("gango is currently under development")
