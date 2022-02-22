@@ -5,8 +5,8 @@ import {
 } from "discord.js"
 
 type commandType = ApplicationCommandDataResolvable & {
-  execute: (interaction: CommandInteraction) => Promise<void>
   permissions: ApplicationCommandPermissionData[]
+  execute: (interaction: CommandInteraction) => Promise<void>
 }
 
 export default commandType

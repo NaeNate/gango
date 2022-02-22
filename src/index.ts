@@ -14,22 +14,23 @@ let commands: Record<
 client.once("ready", async () => {
   console.log("READY")
 
-  const commandManager = client.guilds.cache.get("906585934059946004")?.commands
+  const commandManager =
+    client.guilds.cache.get("906585934059946004")!.commands!
 
-  commandManager?.set([])
+  commandManager.set([])
 
   for (const file of fs.readdirSync(__dirname + "/commands")) {
     const { name, description, options, execute, permissions } =
       require(`./commands/${file}`).default
 
-    const command = await commandManager?.create({
+    const command = await commandManager.create({
       name,
       description,
       options,
       defaultPermission: false,
-    })
+    })!
 
-    command?.permissions.add({ permissions })
+    command.permissions.add({ permissions })
 
     commands[name] = execute
   }

@@ -3,7 +3,7 @@ import commandType from "../types/commandType"
 
 const command: commandType = {
   name: "cls",
-  description: "Delete a channels messages.",
+  description: "Delete a channels messages",
   options: [
     {
       name: "amount",
@@ -21,10 +21,10 @@ const command: commandType = {
   ],
 
   execute: async (interaction) => {
-    const amount = interaction.options.getNumber("amount") || 20
+    const amount = interaction.options.getNumber("amount") || 20!
     const channel = interaction.channel as TextChannel
 
-    const deletedAmount = (await channel.bulkDelete(amount!, true)).size
+    const deletedAmount = (await channel.bulkDelete(amount, true)).size
 
     await interaction.reply({
       content: `Deleted ${deletedAmount} message${amount === 1 ? "" : "s"}`,

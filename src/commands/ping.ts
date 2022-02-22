@@ -2,7 +2,7 @@ import commandType from "../types/commandType"
 
 const command: commandType = {
   name: "ping",
-  description: "Replies with pong",
+  description: "🏓",
   options: [],
   permissions: [
     {
