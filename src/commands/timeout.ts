@@ -23,8 +23,6 @@ const command: commandType = {
         { name: "30 min", value: "30_min" },
         { name: "1 hour", value: "1_hour" },
         { name: "10 hours", value: "10_hour" },
-        { name: "1 day", value: "1_day" },
-        { name: "7 days", value: "7_day" },
       ],
     },
     {
