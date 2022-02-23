@@ -23,7 +23,7 @@ const command: commandType = {
         { name: "30 min", value: "30_min" },
         { name: "1 hour", value: "1_hour" },
         { name: "10 hours", value: "10_hour" },
-        { name: "coma mode", value: "365_day" },
+        { name: "coma mode", value: "90_day" },
       ],
     },
     {
