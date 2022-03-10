@@ -17,7 +17,10 @@ client.once("ready", async () => {
   const commandManager =
     client.guilds.cache.get("906585934059946004")!.commands!
 
-  commandManager.set([])
+  // This command confuses me man. Mayb good for deployment
+  // but not good for testing.
+
+  // commandManager.set([])
 
   for (const file of fs.readdirSync(__dirname + "/commands")) {
     const { name, description, options, execute, permissions } =
