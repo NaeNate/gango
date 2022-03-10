@@ -36,7 +36,7 @@ const command: commandType = {
     ]
 
     await interaction.reply({
-      content: `You asked: ${question}\n ${
+      content: `You asked: ${question}\n${
         answers[Math.floor(Math.random() * answers.length)]
       }`,
     })
