@@ -26,7 +26,7 @@ const command: commandType = {
 
     const answers = [
       "No. Just no.",
-      "Hmm... 🤷‍♂",
+      "Hmm... ¯\\_(ツ)_/¯",
       "Probably",
       "For sure",
       "Not likely",
