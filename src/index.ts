@@ -59,7 +59,7 @@ client.on("interactionCreate", async (interaction) => {
 })
 
 client.on("messageCreate", async (interaction) => {
-  if (interaction.content.includes("https://twitter.com/")) {
+  if (interaction.content.includes("https://twitter.com")) {
     interaction.channel.send("🚨 Twitter User 🚨")
   }
 })
