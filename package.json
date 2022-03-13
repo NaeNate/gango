@@ -2,7 +2,7 @@
   "scripts": {
     "dev": "nodemon -q src/index.ts",
     "start": "ts-node src/index.ts",
-    "push": "git push && git push heroku main"
+    "push": "git push && git push heroku main && heroku ps:scale worker=1"
   },
   "dependencies": {
     "axios": "^0.26.0",

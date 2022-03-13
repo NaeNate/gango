@@ -55,6 +55,8 @@ client.on("interactionCreate", async (interaction) => {
     await commands[interaction.commandName](interaction)
   } catch (e) {
     await interaction.reply("Error - Contact Biinge#7203")
+
+    console.log(e)
   }
 })
 
